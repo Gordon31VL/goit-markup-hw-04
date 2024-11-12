@@ -81,6 +81,10 @@ ul, ol {
 /* Header */
 .header{
     border-bottom: 1px solid #e7e9fc;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    background-color: #ffffff;
 }
 .header .container{
     display: flex;
@@ -117,17 +121,19 @@ ul, ol {
 }
 /* Hero image section */
 .hero-image {
+    height: 600px;
     padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/people-office.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
 }
 
 .hero-image .container{
     display: flex;
     align-items: center;
     flex-direction: column;
-}
-.hero-image{
-    height: 600px;
-    background: #2E2F42;
 }
 
 .hero-text{
@@ -190,6 +196,16 @@ ul, ol {
     overflow: hidden;
   }
 
+.icons-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 100px;
+    background-color: #F4F4FD;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
 /* Team section */
 .teams{
     background-color: #F4F4FD;
