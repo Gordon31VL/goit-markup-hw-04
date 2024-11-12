@@ -77,6 +77,7 @@ ul, ol {
 
 .link:hover, .link:focus{
     color:#404BBF;
+    transition: 250ms;
 }
 /* Header */
 .header{
@@ -97,6 +98,18 @@ ul, ol {
 .header-nav .link{
     display: block;
     padding: 24px 0px;
+    position: relative;
+}
+
+.header-nav .index::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: #404BBF;
+    left: 0;
+    bottom: 0;
+    border-radius: 4px;
 }
 
 .navigation, .header-addresses{
@@ -165,6 +178,7 @@ ul, ol {
 .button:hover, .button:focus{
     background-color: #404BBF;
     cursor: pointer;
+    transition: 250ms;
 }
 /* benefits section*/
 .benefits{
