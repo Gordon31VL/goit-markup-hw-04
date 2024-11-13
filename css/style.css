@@ -135,7 +135,9 @@ ul, ol {
     border-radius: 2px;
     transform: scale(1);
 }
-
+.current{
+    color: #404BBF;
+}
 .navigation, .header-addresses{
     display: flex;
     align-items: center;
