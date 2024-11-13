@@ -5,6 +5,7 @@ body {
     line-height: 24px;
     font-size: 16px;
     letter-spacing: 0.02em;
+    min-width: 1440px;
 }
 
 h1, h2, h3, p {
@@ -348,7 +349,7 @@ ul, ol {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hover{   
+.portfolio-hover-text{   
     position: absolute;
     top: 0;
     left: 0;
@@ -359,8 +360,7 @@ ul, ol {
     transform: translateY(100%);
 }
 
-.portfolio-list:hover .hover{
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.portfolio-list:hover .portfolio-hover-text{
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(0);
 }
@@ -376,6 +376,9 @@ ul, ol {
     padding: 100px 0;
     background-color: #2E2F42;
 }
+.footer-discription{
+    margin-right: 120px;
+}
 .footer .logo{
     display: inline-block;
     margin-bottom: 16px;
@@ -383,21 +386,23 @@ ul, ol {
 .footer .studio{
     color:#f4f4fd;
 }
+.footer-p{
+    width: 264px;
+    color: #F4F4FD;
+}
 .footer .container{
     display: flex;
-}
-.footer-contacts-box{
-    margin-left: 120px;
+    align-items: baseline;
 }
 .footer-contacts-text{
     color: #FFFFFF;
+    font-weight: 500;
     margin-bottom: 16px;
 }
 .footer-contacts{
     display: flex;
     gap: 16px;
 }
-.footer-p{
-    width: 264px;
-    color: #F4F4FD;
+.footer .contact-links:hover, .footer .contact-links:focus{
+    background-color: #31d0aa;
 }
